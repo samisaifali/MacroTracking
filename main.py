@@ -1,2 +1,2 @@
 def main():
-    print("Hello, World!")
+    print("i love you naushin")
