@@ -1,0 +1,1 @@
+A website that tracks Macros in the food you eat, to make your life easier! We are using python and using flask to host the website. 
