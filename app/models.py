@@ -1,4 +1,17 @@
 import requests
 
-response = requests.get("https://api.nal.usda.gov/fdc/v1/food/790508?format=abridged&nutrients=203&nutrients=204&nutrients=205&api_key=eTGv7JpnyNxyZtdbKcpxlLhxaNs8QfBHRArxfjWu")
+query = {  
+    'api_key': 'eTGv7JpnyNxyZtdbKcpxlLhxaNs8QfBHRArxfjWu',
+    'nutrients': '203,204,205,255',
+    'format': 'abridged'
+}
+
+fdcId= '790508'
+
+params = { 
+    'api_key': 'eTGv7JpnyNxyZtdbKcpxlLhxaNs8QfBHRArxfjWu' 
+}
+
+response = requests.get(f'https://api.nal.usda.gov/fdc/v1/food/{fdcId}', params=query)
+
 print(response.json())
