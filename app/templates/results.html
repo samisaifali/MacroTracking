@@ -1,0 +1,9 @@
+<h1>Food Data Result</h1>
+{% if food_data %}
+    <p>Food ID: {{ food_data['fdcId'] }}</p>
+    <p>Description: {{ food_data['description'] }}</p>
+    <p>Data Type: {{ food_data['dataType'] }}</p>
+    <p>Publication Date: {{ food_data['publicationDate'] }}</p>
+{% else %}
+    <p>No data found for the given Food ID.</p>
+{% endif %}
