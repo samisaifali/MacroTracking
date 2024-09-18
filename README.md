@@ -2,7 +2,9 @@ A website that tracks Macros in the food you eat, to make your life easier! We a
 
 HOW TO RUN: <br>
 Step 1: cd ..\MacroTracking<br>
-Step 2: .\venv\Scripts\activate (Windows)<br>
-Step 3: set FLASK_APP=main.py <br>
-Step 4: flask run
+Step 2: python -m venv venv <br>
+Step 3: \venv\Scripts\activate (Windows)<br>
+Step 4: pip install -r requirements.txt <br>
+Step 5: set FLASK_APP=main.py <br>
+Step 6: flask run
 
